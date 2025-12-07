@@ -6,6 +6,7 @@
 * 霞鹜
 * 思源
 * 钉钉进步体
+* DingTalk San
 * JetBrainsMono
 * ComicNeue
 * KesawanScript
