@@ -20,7 +20,7 @@
 
 ```CSS
 /* 苹方字体 CDN - 使用系统字体栈（苹方是 macOS/iOS 系统字体） */
-@import url('https://cdn.jsdelivr.net/gh/hoochanlon/fonts@refs/heads/main/assets/Mengshen-Regular/result.css');
+@import url('https://cdn.jsdelivr.net/gh/hoochanlon/fonts@main/assets/LXGWWenKai-Regular/result.css');
 ```
 
 
