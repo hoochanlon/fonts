@@ -21,3 +21,5 @@
 * 完全免费字体：
     * [阿里巴巴普惠体3.0 ](https://www.alibabafonts.com/#/font)
     * [字体日记网字体日记网（免费字体）](https://ziti.xxriji.cn)
+* 字体导航
+   * https://zh.fonts2u.com
