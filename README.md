@@ -14,12 +14,13 @@
 
 ## 使用方式举例
 
-打开 https://www.jsdelivr.com/github 
+1 打开 https://www.jsdelivr.com/github 
 
 ![](https://cdn.statically.io/gh/hoochanlon/picx-images-hosting/00d2e88d/uploads/2025/PixPin_2025-12-08_01-17-26.png)
 
+2 导入
+
 ```CSS
-/* 苹方字体 CDN - 使用系统字体栈（苹方是 macOS/iOS 系统字体） */
 @import url('https://cdn.jsdelivr.net/gh/hoochanlon/fonts@main/assets/LXGWWenKai-Regular/result.css');
 ```
 
