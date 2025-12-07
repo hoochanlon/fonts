@@ -10,4 +10,7 @@
 * ComicNeue
 * KesawanScript
 
-完全免费字体：https://www.alibabafonts.com/#/font
+其他：
+
+* cdn：https://www.jsdelivr.com/github
+* 完全免费字体：https://www.alibabafonts.com/#/font
