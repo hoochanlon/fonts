@@ -1,6 +1,6 @@
 # fonts
 
-自用字体：
+## 字体列表
 
 * 苹方
 * 霞鹜
@@ -12,7 +12,20 @@
 * ComicNeue
 * KesawanScript
 
-其他：
+## 使用方式举例
+
+打开 https://www.jsdelivr.com/github 
+
+
+
+
+```CSS
+/* 苹方字体 CDN - 使用系统字体栈（苹方是 macOS/iOS 系统字体） */
+@import url('https://cdn.jsdelivr.net/gh/hoochanlon/fonts@refs/heads/main/assets/Mengshen-Regular/result.css');
+```
+
+
+## 其他
 
 * cdn：
     * https://www.jsdelivr.com/github
