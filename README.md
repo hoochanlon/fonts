@@ -1,5 +1,9 @@
 # fonts
 
+**缘起**
+
+web项目较多，故开此repo用做自用字体存储。PS：众所周知，微软雅黑等于方正钓鱼体。
+
 ## 字体列表
 
 除了不到一两百KB的字体，其余字体均做分包处理
@@ -13,6 +17,8 @@
 * 锐字真言体
 * 钉钉进步体
 * 旁门正道粗书体
+* 华为字体（HarmonyOS Sans）
+* 小米字体（Mi San）
 * TESLA
 * Bebas-Neue
 * Montserrat
@@ -20,6 +26,9 @@
 * JetBrainsMono
 * ComicNeue
 * KesawanScript
+
+应用范围：文字排版、博客、文档、PPT、烂大街广告
+
 
 ## 使用方式举例
 
