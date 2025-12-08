@@ -5,11 +5,15 @@
 除了不到一两百KB的字体，其余字体均做分包处理
 
 * 苹方
-* 霞鹜
 * 思源
+* 霞鹜
 * 萌神
-* 旁门正道粗书体
+* 方正楷体
+* 张清平楷书、行书
+* 锐字真言体
 * 钉钉进步体
+* 旁门正道粗书体
+* TESLA
 * Bebas-Neue
 * Montserrat
 * DingTalk San
@@ -75,8 +79,9 @@ https://cdn.staticdelivr.com/gfonts/css2?family=Open+Sans
     * [doyoudo.com - 免费中文字体收集计划](https://flowus.cn/thelaws/share/12828fe3-8806-4350-bfbe-4fc1d032e5db#888c5596-dbbc-4cdb-be31-d72266a4a111)
 * 字体导航：
    * https://zh.fonts2u.com
+   * https://github.com/IBM/plex
 
 * 字体识别：
-   * https://www.qiuziti.com
+   * https://www.fonthubs.com
    * https://www.whatfontis.com
 
