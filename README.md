@@ -21,6 +21,7 @@ web项目较多，故开此repo用做自用字体存储。PS：众所周知，�
 * 小米字体（Mi San）
 * TESLA
 * Bebas-Neue
+* quicksand
 * Montserrat
 * DingTalk San
 * JetBrainsMono
