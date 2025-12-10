@@ -68,7 +68,11 @@ https://cdn.staticdelivr.com/gfonts/css2?family=Font+Name
 https://cdn.staticdelivr.com/gfonts/css2?family=Open+Sans
 ```
 
+### S3
 
+S3 云存储
+
+![](https://cdn.jsdelivr.net/gh/hoochanlon/picx-images-hosting@master/uploads/2025/PixPin_2025-12-10_19-26-43.webp)
 
 ## 其他
 
