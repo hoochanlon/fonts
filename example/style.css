@@ -1,0 +1,7 @@
+/* 导入字体 */
+@import url('https://ik.imagekit.io/hoochanlon/fonts/Mengshen-Handwritten/result.css');
+
+/* 应用字体 */
+.english { font-family: 'Poppins', sans-serif; }
+.chinese { font-family: 'Mengshen-Handwritten-SC', sans-serif; }
+.japanese { font-family: 'Mengshen-Handwritten', sans-serif; }
