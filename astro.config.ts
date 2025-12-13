@@ -11,8 +11,9 @@ import devtoolsJson from 'vite-plugin-devtools-json'
 import { themeConfig } from './src/.config'
 
 // 根据环境变量动态设置 base 路径
-// 如果设置了 ASTRO_BASE 环境变量，使用该值；否则默认使用 '/fonts/'
-// GitHub Pages 和 Deno Deploy 都使用 '/fonts/' 作为 base 路径
+// 如果设置了 ASTRO_BASE 环境变量，使用该值；否则根据部署环境设置
+// GitHub Pages 使用 '/fonts/' 作为 base 路径
+// Deno Deploy 使用根路径 '/' 作为 base 路径
 function getBasePath() {
   // eslint-disable-next-line node/prefer-global/process
   if (process.env.ASTRO_BASE) {
@@ -21,10 +22,18 @@ function getBasePath() {
     console.log(`[Astro Config] Using ASTRO_BASE: ${base}`)
     return base
   }
-  // 默认使用 '/fonts/'（适用于 GitHub Pages 和 Deno Deploy）
-  const defaultBase = '/fonts/'
   // eslint-disable-next-line node/prefer-global/process
   const deployEnv = process.env.DEPLOY_ENV || '(not set)'
+  
+  // 根据部署环境设置不同的 base 路径
+  if (deployEnv === 'deno-deploy') {
+    const base = '/'
+    console.log(`[Astro Config] Using Deno Deploy base: ${base} (DEPLOY_ENV=${deployEnv})`)
+    return base
+  }
+  
+  // 默认使用 '/fonts/'（适用于 GitHub Pages）
+  const defaultBase = '/fonts/'
   console.log(`[Astro Config] Using default base: ${defaultBase} (DEPLOY_ENV=${deployEnv})`)
   return defaultBase
 }
