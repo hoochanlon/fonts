@@ -1,0 +1,16 @@
+/* 导入字体 */
+@import url('https://ik.imagekit.io/hoochanlon/fonts/Mengshen-Handwritten/result.css');
+@import url('https://ik.imagekit.io/hoochanlon/fonts/OPPOSans4/result.css');
+
+
+
+@font-face{
+    font-family:"OPPO Sans 4.0";
+    src:local("OPPO Sans 4.0"),url("https://ik.imagekit.io/hoochanlon/fonts/OPPOSans4/b8d45a4b1842853318f4cdd5ba6ef8a4.woff2")format("woff2");
+    font-style:normal;font-display:swap;font-weight:100 700;
+}
+
+/* 应用字体 */
+.english { font-family: 'OPPO Sans 4.0', sans-serif; }
+.chinese { font-family: 'Mengshen-Handwritten', sans-serif; }
+.japanese { font-family: 'Mengshen-Handwritten', sans-serif; }

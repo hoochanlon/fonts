@@ -1,0 +1,135 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+:root {
+  --uno-colors-primary: theme('colors.primary');
+  --uno-colors-background: theme('colors.background');
+  --uno-fonts-ui: theme('fontFamily.ui');
+  --uno-colors-shadow: theme('colors.shadow');
+}
+html {
+  --at-apply: antialiased;
+  --at-apply: 'bg-background c-primary font-ui text-shadow-color-shadow';
+  font-size: 22px;
+
+  text-shadow: 1px 1px 1px var(--uno-colors-shadow);
+  background-size: 7px 7px;
+  background-image: linear-gradient(to right, var(--uno-colors-shadow) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--uno-colors-shadow) 1px, transparent 1px);
+}
+
+/* 所有链接去掉下划线 */
+:where(a) {
+  text-decoration: none !important;
+}
+
+:where(a):not(.not-underline-hover) {
+  --at-apply: 'p-1.5px';
+  --at-apply: 'decoration-none';
+  --at-apply: 'ease-in-out duration-300ms';
+  --at-apply: 'hover:(c-background bg-primary)';
+}
+
+/* prose 类中的链接也去掉下划线 */
+.prose :where(a):not(:where(.not-prose, .not-prose *)) {
+  text-decoration: none !important;
+}
+
+/* 所有标题使用 FZKai-Z03 字体 */
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: 'FZKai-Z03', serif;
+}
+
+.prose :where(p, ul, ol):not(:where(.not-prose, .not-prose *)) {
+  font-family: 'FZKai-Z03';
+}
+
+/* 文章内容中的标题也使用 FZKai-Z03 */
+.prose :where(h1, h2, h3, h4, h5, h6):not(:where(.not-prose, .not-prose *)) {
+  font-family: 'FZKai-Z03', serif;
+}
+
+/* 日期文本使用 FZKai-Z03 字体 */
+.prose :where(time, span):not(:where(.not-prose, .not-prose *)) {
+  font-family: 'FZKai-Z03', serif;
+  font-size: 1.1em;
+}
+
+/* 文章元数据（包括发布日期）使用 FZKai-Z03 字体 */
+.prose header :where(span, time) {
+  font-family: 'FZKai-Z03', serif;
+  font-size: 1.1em;
+}
+
+/* 针对这个特定标题 */
+h1.post-title a.not-prose {
+  font-size: 45px;
+}
+
+/* 针对整个代码块容器 */
+pre.astro-code.dracula {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Consolas', 'Monaco', 'Courier New', monospace !important;
+
+  /* 精准控制字体属性 */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+
+  /* 保持原有背景和颜色 */
+  background-color: #282a36 !important;
+  color: #f8f8f2 !important;
+}
+
+/* 针对代码内容 */
+pre.astro-code.dracula code {
+  font-family: inherit !important; /* 继承父级字体 */
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* 针对行号（如果有） */
+pre.astro-code.dracula .line {
+  font-family: inherit;
+}
+
+/* 针对不同类型的代码标记 */
+pre.astro-code.dracula .line span {
+  font-family: inherit; /* 确保所有span使用相同字体 */
+}
+
+/* 针对特定语法高亮 */
+pre.astro-code.dracula .keyword {
+  font-weight: 600; /* 关键字加粗 */
+}
+
+pre.astro-code.dracula .comment {
+  font-style: italic; /* 注释斜体 */
+}
+
+/* 字体列表表格样式 */
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+}
+
+.prose table th,
+.prose table td {
+  padding: 0.75em 1em;
+  text-align: left;
+  border: 1px solid var(--uno-colors-shadow);
+  font-family: 'FZKai-Z03', serif;
+}
+
+.prose table th {
+  background-color: var(--uno-colors-shadow);
+  font-weight: bold;
+}
+
+.prose table tr:nth-child(even) {
+  background-color: transparent;
+}
+
+.prose table tr:hover {
+  background-color: var(--uno-colors-shadow);
+}

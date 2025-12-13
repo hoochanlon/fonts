@@ -1,0 +1,42 @@
+---
+import { themeConfig } from '~/.config'
+
+const year = new Date().getFullYear()
+
+const { website, author, footer } = themeConfig.site
+
+function parseFooter(str: string) {
+  str = str.replace(/%author/g, author)
+  str = str.replace(/%website/g, website)
+  str = str.replace(/%year/g, year.toString())
+  return str
+}
+---
+
+{
+  footer.length &&
+    footer.map((str) => {
+      // 解析 "Theme: <a>链接</a>" 格式
+      const match = str.match(/^([^<]+):\s*<a[^>]*href="([^"]*)"[^>]*>([^<]+)<\/a>/)
+      if (match) {
+        const [, label, href, linkText] = match
+        return (
+          <div>
+            <h3 class="text-3.5 font-bold">{label.trim()}</h3>
+            <p class="font-bold text-3">
+              <a href={href} target="_blank">
+                {linkText}
+              </a>
+            </p>
+          </div>
+        )
+      }
+      return <p set:html={parseFooter(str)} />
+    })
+}
+
+<style>
+  p {
+    --at-apply: 'font-bold text-3';
+  }
+</style>
