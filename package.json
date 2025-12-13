@@ -10,6 +10,8 @@
   "scripts": {
     "dev": "astro check && astro dev",
     "build": "astro check && astro build",
+    "build:github": "DEPLOY_ENV=github astro check && astro build",
+    "build:deno": "DEPLOY_ENV=deno astro check && astro build",
     "preview": "astro preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
