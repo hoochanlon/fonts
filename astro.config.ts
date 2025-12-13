@@ -11,24 +11,31 @@ import devtoolsJson from 'vite-plugin-devtools-json'
 import { themeConfig } from './src/.config'
 
 // 根据环境变量动态设置 base 路径
-// 如果设置了 ASTRO_BASE 环境变量，使用该值；否则根据 DEPLOY_ENV 判断
-// DEPLOY_ENV=deno 时使用 '/'，其他情况使用 '/fonts/'
-const getBasePath = () => {
+// 如果设置了 ASTRO_BASE 环境变量，使用该值；否则默认使用 '/fonts/'
+// GitHub Pages 和 Deno Deploy 都使用 '/fonts/' 作为 base 路径
+function getBasePath() {
+  // eslint-disable-next-line node/prefer-global/process
   if (process.env.ASTRO_BASE) {
-    return process.env.ASTRO_BASE
+    // eslint-disable-next-line node/prefer-global/process
+    const base = process.env.ASTRO_BASE
+    console.log(`[Astro Config] Using ASTRO_BASE: ${base}`)
+    return base
   }
-  if (process.env.DEPLOY_ENV === 'deno') {
-    return '/'
-  }
-  // 默认使用 GitHub Pages 路径
-  return '/fonts/'
+  // 默认使用 '/fonts/'（适用于 GitHub Pages 和 Deno Deploy）
+  const defaultBase = '/fonts/'
+  // eslint-disable-next-line node/prefer-global/process
+  const deployEnv = process.env.DEPLOY_ENV || '(not set)'
+  console.log(`[Astro Config] Using default base: ${defaultBase} (DEPLOY_ENV=${deployEnv})`)
+  return defaultBase
 }
+
+const basePath = getBasePath()
 
 // https://astro.build/config
 export default defineConfig({
   site: themeConfig.site.website,
   prefetch: true,
-  base: getBasePath(),
+  base: basePath,
   vite: {
     plugins: [
       // eslint-disable-next-line ts/ban-ts-comment
