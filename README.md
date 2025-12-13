@@ -1,38 +1,15 @@
 # 免费可商用字体
 
-缘起：web项目较多，故开此repo用做自用字体存储。PS：众所周知，微软雅黑等于方正钓鱼体。
+缘起：众所周知，微软雅黑等于方正钓鱼体，由于笔者 web 项目较多，故开此 Repo 用做字体存储，助力提供优质中文 Web 字体的免费资源库，旨在为开发者、设计师提供多样化的中文字体选择。
 
-## 字体列表
+字体列表见：https://fonts.hoochanlon.deno.net
 
-除了不到一两百KB的字体，其余字体均做分包处理
-
-* 苹方
-* 思源
-* 霞鹜
-* 萌神
-* 方正楷体
-* 张清平楷书、行书
-* 锐字真言体
-* 钉钉进步体
-* 旁门正道粗书体
-* 华为字体（HarmonyOS Sans）
-* 小米字体（Mi Sans）
-* 欧加字体（Oppo Sans）
-* TESLA
-* Bebas-Neue
-* quicksand
-* Montserrat
-* DingTalk San
-* JetBrainsMono
-* ComicNeue
-* KesawanScript
-
-应用范围：文字排版、博客、文档、PPT、烂大街广告
-
-
-## 使用方式举例
+## 使用方式
 
 ### 常规
+
+> [!note]
+>  字体文件夹由 assets 调整到 public
 
 1 打开 https://www.jsdelivr.com/github 
 
@@ -58,7 +35,6 @@
 <link href="https://fonts.bunny.net/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
 ```
 
-
 方式二：staticdelivr
 
 ```
@@ -69,7 +45,7 @@ https://cdn.staticdelivr.com/gfonts/css2?family=Font+Name
 https://cdn.staticdelivr.com/gfonts/css2?family=Open+Sans
 ```
 
-### 对象存储
+### 对象存储、无服务器
 
 推荐站点：
 
@@ -80,7 +56,7 @@ https://cdn.staticdelivr.com/gfonts/css2?family=Open+Sans
 
 ![](https://cdn.jsdelivr.net/gh/hoochanlon/picx-images-hosting@master/uploads/2025/PixPin_2025-12-10_19-26-43.webp)
 
-## 其他
+## 相关参考链接
 
 * cdn：
     * https://www.jsdelivr.com/github
@@ -97,7 +73,7 @@ https://cdn.staticdelivr.com/gfonts/css2?family=Open+Sans
 
 * 字体统计   
     * [doyoudo.com - 免费中文字体收集计划](https://flowus.cn/thelaws/share/12828fe3-8806-4350-bfbe-4fc1d032e5db#888c5596-dbbc-4cdb-be31-d72266a4a111)
-    * [视频字体排版调查和分析](https://fontdiaocha.notion.site/)
+    * [非而睿窝克斯 - 视频字体排版调查和分析](https://fontdiaocha.notion.site/)
 * 字体导航：
    * https://zh.fonts2u.com
    * https://github.com/IBM/plex
