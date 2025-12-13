@@ -5,6 +5,7 @@ export const userConfig: Partial<UserConfig> = {
   // site: { title: "講評世界" },
   // seo: { twitter: "@moeyua13" },
   site: {
+    website: 'https://hoochanlon.github.io/font',
     socialLinks: [
       {
         name: 'github',
