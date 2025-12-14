@@ -15,6 +15,10 @@ const dark = themeConfig.appearance.theme === 'dark'
 
 <html lang={lang} class:list={['animation-prepared', { dark }]}>
   <head>
+    <!-- 字体加载优化：提前建立连接 -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <!-- 字体样式表 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cn-fontsource-fz-kai-z-03-regular@1.0.1/font.min.css" />
     <link
       rel="stylesheet"
@@ -56,8 +60,24 @@ const dark = themeConfig.appearance.theme === 'dark'
         document.documentElement.classList.remove('animation-prepared')
         document.removeEventListener('animationend', removeAnimation, false)
       }
+
+      // 字体加载优化：使用Font Loading API确保字体加载后应用样式
+      if ('fonts' in document) {
+        document.fonts.ready.then(() => {
+          document.documentElement.classList.add('fonts-loaded')
+        })
+      }
     </script>
     <style>
+      /* 字体加载优化：确保字体立即显示 */
+      /* 如果外部字体CSS没有设置font-display: swap，浏览器会使用默认行为 */
+      /* 这里我们通过优化回退字体来确保良好的用户体验 */
+      @font-face {
+        font-family: 'FZKai-Z03';
+        font-display: swap;
+        /* 这个规则会被外部CSS覆盖，但确保浏览器知道使用swap策略 */
+      }
+
       /* 页面首次加载动画 */
       html.animation-prepared .transition-swup-header,
       html.animation-prepared .transition-swup-footer {

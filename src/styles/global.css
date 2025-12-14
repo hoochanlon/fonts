@@ -34,29 +34,34 @@ html {
   text-decoration: none !important;
 }
 
+/* 字体加载优化：使用font-display: swap确保立即显示回退字体 */
+/* 注意：如果外部字体CSS没有设置font-display，浏览器会使用默认值 */
+/* 这里我们确保所有使用FZKai-Z03的地方都有良好的回退字体 */
+
 /* 所有标题使用 FZKai-Z03 字体 */
 :where(h1, h2, h3, h4, h5, h6) {
-  font-family: 'FZKai-Z03', serif;
+  font-family: 'FZKai-Z03', 'STKaiti', 'KaiTi', '楷体', 'SimKai', serif;
+  /* 添加多个回退字体，确保在FZKai-Z03加载前有合适的显示 */
 }
 
 .prose :where(p, ul, ol):not(:where(.not-prose, .not-prose *)) {
-  font-family: 'FZKai-Z03';
+  font-family: 'FZKai-Z03', 'STKaiti', 'KaiTi', '楷体', 'SimKai', serif;
 }
 
 /* 文章内容中的标题也使用 FZKai-Z03 */
 .prose :where(h1, h2, h3, h4, h5, h6):not(:where(.not-prose, .not-prose *)) {
-  font-family: 'FZKai-Z03', serif;
+  font-family: 'FZKai-Z03', 'STKaiti', 'KaiTi', '楷体', 'SimKai', serif;
 }
 
 /* 日期文本使用 FZKai-Z03 字体 */
 .prose :where(time, span):not(:where(.not-prose, .not-prose *)) {
-  font-family: 'FZKai-Z03', serif;
+  font-family: 'FZKai-Z03', 'STKaiti', 'KaiTi', '楷体', 'SimKai', serif;
   font-size: 1.1em;
 }
 
 /* 文章元数据（包括发布日期）使用 FZKai-Z03 字体 */
 .prose header :where(span, time) {
-  font-family: 'FZKai-Z03', serif;
+  font-family: 'FZKai-Z03', 'STKaiti', 'KaiTi', '楷体', 'SimKai', serif;
   font-size: 1.1em;
 }
 
@@ -118,7 +123,7 @@ pre.astro-code.dracula .comment {
   padding: 0.75em 1em;
   text-align: left;
   border: 1px solid var(--uno-colors-shadow);
-  font-family: 'FZKai-Z03', serif;
+  font-family: 'FZKai-Z03', 'STKaiti', 'KaiTi', '楷体', 'SimKai', serif;
 }
 
 .prose table th {
