@@ -1,4 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+@import url('./fangzheng-kaiti-sc/result.css');
 
 :root {
   --uno-colors-primary: theme('colors.primary');
@@ -34,29 +35,29 @@ html {
   text-decoration: none !important;
 }
 
-/* 所有标题使用 FZKai-Z03 字体 */
+/* 所有标题使用 FZKai-Z03S 字体 */
 :where(h1, h2, h3, h4, h5, h6) {
-  font-family: 'FZKai-Z03', serif;
+  font-family: 'FZKai-Z03S', serif;
 }
 
 .prose :where(p, ul, ol):not(:where(.not-prose, .not-prose *)) {
-  font-family: 'FZKai-Z03';
+  font-family: 'FZKai-Z03S';
 }
 
-/* 文章内容中的标题也使用 FZKai-Z03 */
+/* 文章内容中的标题也使用 FZKai-Z03S */
 .prose :where(h1, h2, h3, h4, h5, h6):not(:where(.not-prose, .not-prose *)) {
-  font-family: 'FZKai-Z03', serif;
+  font-family: 'FZKai-Z03S', serif;
 }
 
-/* 日期文本使用 FZKai-Z03 字体 */
+/* 日期文本使用 FZKai-Z03S 字体 */
 .prose :where(time, span):not(:where(.not-prose, .not-prose *)) {
-  font-family: 'FZKai-Z03', serif;
+  font-family: 'FZKai-Z03S', serif;
   font-size: 1.1em;
 }
 
-/* 文章元数据（包括发布日期）使用 FZKai-Z03 字体 */
+/* 文章元数据（包括发布日期）使用 FZKai-Z03S 字体 */
 .prose header :where(span, time) {
-  font-family: 'FZKai-Z03', serif;
+  font-family: 'FZKai-Z03S', serif;
   font-size: 1.1em;
 }
 
@@ -118,7 +119,7 @@ pre.astro-code.dracula .comment {
   padding: 0.75em 1em;
   text-align: left;
   border: 1px solid var(--uno-colors-shadow);
-  font-family: 'FZKai-Z03', serif;
+  font-family: 'FZKai-Z03S', serif;
 }
 
 .prose table th {
