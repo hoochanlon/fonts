@@ -36,7 +36,7 @@ pubDate: 2025-12-12
 
 1 打开 https://www.jsdelivr.com/github
 
-![](https://cdn.statically.io/gh/hoochanlon/picx-images-hosting/00d2e88d/uploads/2025/PixPin_2025-12-08_01-17-26.png)
+![](https://cdn.jsdelivr.net/gh/hoochanlon/picx-images-hosting@master/imgs/uploads/2025/PixPin_2025-12-08_01-17-26.png)
 
 2 导入
 
@@ -79,7 +79,7 @@ https://cdn.staticdelivr.com/gfonts/css2?family=Open+Sans
 
 或无服务器部署：https://deno.com
 
-![](https://cdn.jsdelivr.net/gh/hoochanlon/picx-images-hosting@master/uploads/2025/PixPin_2025-12-10_19-26-43.webp)
+![](https://cdn.jsdelivr.net/gh/hoochanlon/picx-images-hosting@master/imgs/uploads/2025/PixPin_2025-12-10_19-26-43.webp)
 
 ## 其他
 
